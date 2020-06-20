@@ -38,7 +38,7 @@ In a case of delay of some worker, we have configured the Q visibility timeout t
 Bad idea: when number of clients (local apps), exceeds some number (about several thousands) we should give more power to the manager in the form of Thread pool or even several managers
 Good idea: We don’t make new local apps requests wait
 We synchronized the activation of new EC2 instances to ensure no more than 10 instances will be running, regardless the number of concurrently running local apps (For student account compatibility).
-
+# ---------------------
 •	Full run:
 Local app:
 For every local app we generate some unique id.
